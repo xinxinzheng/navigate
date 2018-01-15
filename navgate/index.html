@@ -1,10 +1,12 @@
 <!DOCTYPE>
 <html>
+
 <head>
-<script src="./js/vue.min.js"></script>
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/navlist.css">
+    <script src="./js/vue.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navlist.css">
 </head>
+
 <body>
     <div id="app">
         <div class="nav-page">
@@ -14,7 +16,7 @@
             </div>
             <div class="nav-block">
                 <ul class="nav-list flex-row" ref="navlist">
-                    <li v-for="nav in navlist" :key="nav.title" class="nav-single" @click="more(nav,event)">
+                    <li v-for="(nav,index) in navlist" :key="nav.title" class="nav-single" @click="more(nav,index)">
                         <div class="nav-per" :style="getStyle(nav)">
                             <p class="nav-single-header">{{nav.title}}</p>
                         </div>
@@ -23,7 +25,7 @@
                 </ul>
             </div>
             <div class="nav-info">
-                <div class="sub-nav-list flex-row" >
+                <div class="sub-nav-list flex-row">
                     <div class="sub-nav-block" v-for="row in nav.children" @click="go(row)" :key="row.title">
                         <div>
                             <a>{{row.title}}</a>
@@ -37,42 +39,46 @@
     <script>
         new Vue({
             el: '#app',
-            data(){
+            data() {
                 return {
-                    navlist:[],
-                    nav:{},
-                    target:{}
+                    navlist: [],
+                    nav: {},
+                    length: 3
                 }
             },
-            methods:{
-                go(nav){
-                    window.open(nav.url,'_blank');
+            methods: {
+                go(nav) {
+                    window.open(nav.url, '_blank');
                 },
-                getStyle(nav){
+                getStyle(nav) {
                     return {
-                        background:"url(" + nav.img + ") no-repeat",
+                        background: "url(" + nav.img + ") no-repeat",
                         backgroundSize: 'auto',
-                        backgroundOrigin:'center'
+                        backgroundOrigin: 'center'
                     }
                 },
-                more(nav,event){
+                more(nav, index) {
                     this.nav = nav;
-                    this.target = event.target;
+                    let ele = this.$refs.triangle;
+                    let width = this.$refs.navlist.clientWidth / this.length;
+                    ele.style.left = width * index + width / 2 + 'px';
                 }
             },
-            beforeMount(){
+            beforeCreate() {
                 fetch('./data.json').then(response => {
-                    return response.json();
+                    return response.json()
                 }).then(data => {
                     this.navlist = data.navlist;
+                    this.length = this.navlist.length >= 3 ? this.navlist.length : 3;
                     this.nav = this.navlist && this.navlist[0];
-                    let ele = this.$refs.triangle;
-                    ele.style.left = this.$refs.navlist.children[0].offsetLeft + this.$refs.navlist.children[0].clientWidth / 2 + 'px';
-                    console.log(ele.style.left,this.$refs.navlist.children[0].clientWidth);
                 })
+            },
+            mounted() {
+                this.more(this.nav, 0);
+                // document.querySelector('.nav-single').click();
             }
         })
     </script>
 </body>
-</html>
 
+</html>

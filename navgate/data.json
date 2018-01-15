@@ -1,83 +1,83 @@
 {
-    "navlist":[{
-                   "title":"靶场-数据平台-任务资源调度子系统",
-                   "url":"https://angularjs.org/",
-                   "img":"./images/back_red.png",
-                   "backcolor":"linear-gradient(to bottom, #EF696D, #EE707B 50%, #FB918D)",
-                   "is_open":false,
-                   "children":[{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   }]
-               },{
-                   "title":"靶场-数据平台-任务资源调度子系统",
-                   "url":"https://cn.vuejs.org/v2/guide/index.html",
-                   "img":"./images/back_lightblue.png",
-                   "is_open":false,
-                   "backcolor":"linear-gradient(to bottom, #5EB4FA, #67B7F6 50%, #8AC7F9)",
-                   "children":[{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   }]
-               },{
-                   "title":"靶场-数据平台-任务资源调度子系统",
-                   "url":"http://cn.redux.js.org/",
-                   "img":"images/back_green.png",
-                   "is_open":false,
-                   "backcolor":"linear-gradient(to bottom, #15AABB, #05A6B8 50%, #47CDDE)",
-                   "children":[{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   }]
-               },{
-                   "title":"靶场-数据平台-任务资源调度子系统",
-                   "url":"https://vuex.vuejs.org/zh-cn/",
-                   "img":"./images/back_yellow.png",
-                   "is_open":false,
-                   "backcolor":"linear-gradient(to bottom, #FDB61F, #FCBD1C 50%, #FAD74D)",
-                   "children":[{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://angularjs.org/",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   },{
-                       "title":"靶场-数据平台-任务资源调度子系统",
-                       "url":"https://cn.vuejs.org/v2/guide/index.html",
-                       "sub_title":"靶场-数据平台-任务资源调度子系统"
-                   }]
-               }]
+    "navlist": [{
+        "title": "靶场-数据平台-任务资源调度子系统",
+        "url": "https://angularjs.org/",
+        "img": "./images/back_red.png",
+        "backcolor": "linear-gradient(to bottom, #EF696D, #EE707B 50%, #FB918D)",
+        "is_open": false,
+        "children": [{
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }]
+    }, {
+        "title": "靶场-数据平台-任务资源调度子系统",
+        "url": "https://cn.vuejs.org/v2/guide/index.html",
+        "img": "./images/back_lightblue.png",
+        "is_open": false,
+        "backcolor": "linear-gradient(to bottom, #5EB4FA, #67B7F6 50%, #8AC7F9)",
+        "children": [{
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }]
+    }, {
+        "title": "靶场-数据平台-任务资源调度子系统",
+        "url": "http://cn.redux.js.org/",
+        "img": "images/back_green.png",
+        "is_open": false,
+        "backcolor": "linear-gradient(to bottom, #15AABB, #05A6B8 50%, #47CDDE)",
+        "children": [{
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }]
+    }, {
+        "title": "靶场-数据平台-任务资源调度子系统",
+        "url": "https://vuex.vuejs.org/zh-cn/",
+        "img": "./images/back_yellow.png",
+        "is_open": false,
+        "backcolor": "linear-gradient(to bottom, #FDB61F, #FCBD1C 50%, #FAD74D)",
+        "children": [{
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://angularjs.org/",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }, {
+            "title": "靶场-数据平台-任务资源调度子系统",
+            "url": "https://cn.vuejs.org/v2/guide/index.html",
+            "sub_title": "靶场-数据平台-任务资源调度子系统"
+        }]
+    }]
 }

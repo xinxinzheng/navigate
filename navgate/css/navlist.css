@@ -1,46 +1,53 @@
-    .nav-page{
-        width:100%;
-        height:100%;
+    .nav-page {
+        width: 100%;
+        height: 100%;
         /* background: #F3F4F8; */
-        background:white;
+        background: white;
         background-image: url('../images/ms.png');
         background-repeat: repeat;
-        background-size:200px 200px;
-        background-position: center;        
+        background-size: 200px 200px;
+        background-position: center;
     }
-    .nav-page .nav-header{
-        height:60px;
-        background:#FCFDFE;
+    
+    .nav-page .nav-header {
+        height: 60px;
+        background: #FCFDFE;
         box-shadow: 0px 2px 2px 0px #D6D6D6;
         position: relative;
     }
-    .nav-page .nav-header .logo{
+    
+    .nav-page .nav-header .logo {
         position: absolute;
         left: 25px;
-        top:50%;
+        top: 50%;
         transform: translateY(-50%)
     }
-    .nav-page .nav-header .app-link{
+    
+    .nav-page .nav-header .app-link {
         float: right;
         display: inline-block;
-        height:$header-height;
-        line-height:60px;
-        margin-right:20px;
-        color:#666666;
+        height: $header-height;
+        line-height: 60px;
+        margin-right: 20px;
+        color: #666666;
         font-size: 14px;
-        cursor:pointer;
+        cursor: pointer;
     }
-    .nav-page .nav-info{
-        width:100%;
-        background:#f5f5f6;
+    
+    .nav-page .nav-info {
+        width: 100%;
+        background: #f5f5f6;
     }
-    .nav-page .nav-info .sub-nav-list{
-        width:80%;
-        margin:auto;
-        padding:20px 0px 20px 0px;
+    
+    .nav-page .nav-info .sub-nav-list {
+        width: 80%;
+        margin: auto;
+        padding: 20px 0px 20px 0px;
         flex-wrap: wrap;
+        transition: height .3s linear;
     }
-    .nav-page .nav-list .indicator-triangle{
+    
+    .nav-page .nav-list .indicator-triangle {
         position: absolute;
         bottom: -5;
         width: 0;
@@ -50,87 +57,98 @@
         border-bottom: 8px solid #f5f5f6;
         transition: left .3s linear;
     }
-    .nav-page .nav-info .sub-nav-list .sub-nav-block{
-        width:25%;
-        height:92px;
-        justify-content:space-between;
-        cursor:pointer;
-        padding:10px;
+    
+    .nav-page .nav-info .sub-nav-list .sub-nav-block {
+        width: 25%;
+        height: 92px;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 10px;
         box-sizing: border-box;
         float: left;
         cursor: pointer;
-        position: relative;  
+        position: relative;
     }
-    .nav-page .nav-info .sub-nav-list .sub-nav-block div{
+    
+    .nav-page .nav-info .sub-nav-list .sub-nav-block div {
         padding: 12px 20px;
         transition: all .3s ease-in-out;
     }
-    .nav-page .nav-info .sub-nav-list .sub-nav-block div:hover{
-        background:white;
-        box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+    
+    .nav-page .nav-info .sub-nav-list .sub-nav-block div:hover {
+        background: white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
     }
-    .nav-page .nav-info .sub-nav-list .sub-nav-block div a{
-        display:block;
+    
+    .nav-page .nav-info .sub-nav-list .sub-nav-block div a {
+        display: block;
         font-size: 14px;
         color: #373d41;
         line-height: 24px;
     }
-    .nav-page .nav-info .sub-nav-list .sub-nav-block div span{
+    
+    .nav-page .nav-info .sub-nav-list .sub-nav-block div span {
         font-size: 12px;
         color: #9b9ea0;
         line-height: 24px;
     }
-    .nav-page .nav-block{
+    
+    .nav-page .nav-block {
         position: relative;
-        width:100%;
+        width: 100%;
     }
-    .nav-page .nav-block .nav-list{
+    
+    .nav-page .nav-block .nav-list {
         position: relative;
         flex-wrap: wrap;
-        margin:20px 20px 5px 20px;
+        margin: 20px 20px 5px 20px;
     }
-    .nav-page .nav-block .nav-list li.nav-single{
-        position: relative;
-        width:25%;
-        height:200px;
-        padding:10px 10px 10px 10px;
+    
+    .nav-page .nav-block .nav-list li.nav-single {
+        width: 25%;
+        height: 200px;
+        padding: 10px 10px 10px 10px;
         box-sizing: border-box;
     }
-    .nav-page .nav-block .nav-list .nav-per{
-        height:180px;
+    
+    .nav-page .nav-block .nav-list .nav-per {
+        height: 180px;
         position: relative;
         box-shadow: 5px 5px 5px 0px #D6D6D6;
-        cursor:pointer;
+        cursor: pointer;
     }
-    .nav-page .nav-block .nav-list .nav-per .nav-single-header{
-        font-size:18px;
-        color:white;
+    
+    .nav-page .nav-block .nav-list .nav-per .nav-single-header {
+        font-size: 18px;
+        color: white;
         height: 40px;
-        width:100%;
-        line-height:40px;
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-55%);
+        width: 100%;
+        line-height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
         text-align: center;
-        padding:0px 10px;
+        padding: 0px 10px;
         font-weight: 600;
     }
-    .nav-page .nav-block .nav-list .nav-per .go-button{
-        display:inline-block;
+    
+    .nav-page .nav-block .nav-list .nav-per .go-button {
+        display: inline-block;
         box-sizing: border-box;
         height: 30px;
         line-height: 30px;
-        width:80px;
-        border:1px solid white;
-        border-radius:15px / 50%;
-        color:white;
+        width: 80px;
+        border: 1px solid white;
+        border-radius: 15px / 50%;
+        color: white;
         position: absolute;
-        bottom:10px;
-        right:15px;
+        bottom: 10px;
+        right: 15px;
     }
-    @media screen and (max-width:1366px){
-        .nav-page .nav-info .sub-nav-list{
-            width:100%;
+    
+    @media screen and (max-width:1366px) {
+        .nav-page .nav-info .sub-nav-list {
+            width: 100%;
         }
     }
