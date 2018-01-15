@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+<head>
+<script src="./js/vue.min.js"></script>
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/navlist.css">
+</head>
+<body>
+    <div id="app">
+        <div class="nav-page">
+            <div class="nav-header">
+                <img class="logo" src="./images/nav_logo.png">
+                <a class="app-link" href="#/app/audi-rate">返回首页</a>
+            </div>
+            <div class="nav-block">
+                <ul class="nav-list flex-row" ref="navlist">
+                    <li v-for="nav in navlist" :key="nav.title" class="nav-single" @click="more(nav,event)">
+                        <div class="nav-per" :style="getStyle(nav)">
+                            <p class="nav-single-header">{{nav.title}}</p>
+                        </div>
+                    </li>
+                    <div class="indicator-triangle" ref="triangle"></div>
+                </ul>
+            </div>
+            <div class="nav-info">
+                <div class="sub-nav-list flex-row" >
+                    <div class="sub-nav-block" v-for="row in nav.children" @click="go(row)" :key="row.title">
+                        <div>
+                            <a>{{row.title}}</a>
+                            <span>{{row.title}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data(){
+                return {
+                    navlist:[],
+                    nav:{},
+                    target:{}
+                }
+            },
+            methods:{
+                go(nav){
+                    window.open(nav.url,'_blank');
+                },
+                getStyle(nav){
+                    return {
+                        background:"url(" + nav.img + ") no-repeat",
+                        backgroundSize: 'auto',
+                        backgroundOrigin:'center'
+                    }
+                },
+                more(nav,event){
+                    this.nav = nav;
+                    this.target = event.target;
+                }
+            },
+            beforeMount(){
+                fetch('./data.json').then(response => {
+                    return response.json();
+                }).then(data => {
+                    this.navlist = data.navlist;
+                    this.nav = this.navlist && this.navlist[0];
+                    let ele = this.$refs.triangle;
+                    ele.style.left = this.$refs.navlist.children[0].offsetLeft + this.$refs.navlist.children[0].clientWidth / 2 + 'px';
+                    console.log(ele.style.left,this.$refs.navlist.children[0].clientWidth);
+                })
+            }
+        })
+    </script>
+</body>
+</html>
+
